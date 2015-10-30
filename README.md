@@ -22,12 +22,12 @@ The module is an json object with this structure:
 
 ```
 hearthstone-db:
-	- meta
 	- allCards
 	- allCollectibles
 	- brm
 	- gvg
 	- naxxramas
+	- tgt
 ```
 
 
@@ -74,7 +74,8 @@ set: string
 	- "expert"
 	- "naxxramas"
 	- "gvg"
-	- "brm",
+	- "brm"
+	- "tgt",
 mana: integer,
 attack: integer,
 health: integer,
