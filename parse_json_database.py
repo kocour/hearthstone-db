@@ -3,7 +3,7 @@ import os
 import sqlite3
 
 def main():
-    conn = sqlite3.connect('C:\\Users\\Pontus\\Documents\\workspace\\HSDeckBuilder\\hearthstone-db\\all-cards.db')
+    conn = sqlite3.connect('all-cards.db')
     c = conn.cursor()
     sets = {"gvg": "Goblins vs Gnomes",
             "tgt": "The Grand Tournament",
@@ -11,7 +11,7 @@ def main():
             "loe": "The League of Explorers",
             "con": "Curse of Naxxramas"}
     result = None
-    myfile = os.path.join(os.sep, "C:/", "Users", "Pontus", "Documents", "workspace", "HSDeckBuilder", "hearthstone-db", "cards", "all-cards.json")
+    myfile = os.path.join("cards", "all-cards.json")
     c.execute('''CREATE TABLE IF NOT EXISTS heroes
                  (id integer primary key, name text unique)''')
     c.execute('''CREATE TABLE IF NOT EXISTS types
@@ -32,7 +32,6 @@ def main():
                  (id integer primary key, name text unique)''')
     c.execute('''CREATE TABLE IF NOT EXISTS card_effects
                  (id integer primary key, card_id integer, effect_id integer, description text, FOREIGN KEY(card_id) REFERENCES cards(id), FOREIGN KEY(effect_id) REFERENCES effects(id))''')
-
     with open(myfile) as fp:
         stuff = json.load(fp)
         id = None
@@ -40,7 +39,7 @@ def main():
         description = None
         image_url = None
         hero = None
-        category = None
+        type = None
         quality = None
         race = None
         set = None
@@ -53,7 +52,7 @@ def main():
             if k == "cards":
                 for card in v:
                     hero_id = insert_or_get_id(c, "heroes", {"name": card["hero"]})
-                    type_id = insert_or_get_id(c, "types", {"name": card["category"]})
+                    type_id = insert_or_get_id(c, "types", {"name": card["type"]})
                     quality_id = insert_or_get_id(c, "qualities", {"name": card["quality"]})
                     if card["race"] is not None:
                         subtype_id = insert_or_get_id(c, "subtypes", {"name": card["race"], "type_id": type_id})
@@ -70,7 +69,6 @@ def main():
                                                               "health": card["health"],
                                                               "collectible": card["collectible"] })
     conn.commit()
-
 def insert_or_get_id(cursor, table, args):
     keys = []
     values = []
@@ -88,6 +86,5 @@ def insert_or_get_id(cursor, table, args):
         if result is not None:
             return result[0]
     return None
-
 if __name__ == "__main__":
     main()
