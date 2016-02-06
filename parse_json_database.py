@@ -62,7 +62,7 @@ def main():
                     for effect in card["effect_list"]:
                         effect_id = insert_or_get_id(c, "effects", {"name": effect["effect"]})
                         card_effect_id = insert_or_get_id(c, "card_effects", {"card_id": card_id, "effect_id": effect_id, "description": effect["extra"]})
-                    card_id = insert_or_get_id(c, "cards", { "name": card["name"], "description": card["description"], "image_url": card["image_url"],
+                    card_id = insert_or_get_id(c, "cards", { "id": card["id"], "name": card["name"], "description": card["description"], "image_url": card["image_url"],
                                                               "hero_id": hero_id, "type_id": type_id, "quality_id": quality_id, "subtype_id": subtype_id, "set_id": set_id,
                                                               "mana": card["mana"],
                                                               "attack": card["attack"],
