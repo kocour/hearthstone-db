@@ -5,6 +5,7 @@ var gvg = require('./cards/gvg.json');
 var loe = require('./cards/loe.json');
 var naxxramas = require('./cards/naxxramas.json');
 var tgt = require('./cards/tgt.json');
+var wtog = require('./cards/wtog.json');
 
 module.exports = {
     meta: allCards.meta,
@@ -15,4 +16,5 @@ module.exports = {
     loe: loe.cards,
     naxxramas: naxxramas.cards,
     tgt: tgt.cards
+    wtog: wtog.cards
 };

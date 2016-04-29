@@ -26,8 +26,10 @@ hearthstone-db:
 	- allCollectibles
 	- brm
 	- gvg
+	- loe
 	- naxxramas
 	- tgt
+	- wtog
 ```
 
 
@@ -75,7 +77,9 @@ set: string
 	- "naxxramas"
 	- "gvg"
 	- "brm"
-	- "tgt",
+	- "loe"
+	- "tgt"
+	- "wtog",
 mana: integer,
 attack: integer,
 health: integer,
