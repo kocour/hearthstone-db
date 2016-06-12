@@ -15,6 +15,6 @@ module.exports = {
     gvg: gvg.cards,
     loe: loe.cards,
     naxxramas: naxxramas.cards,
-    tgt: tgt.cards
+    tgt: tgt.cards,
     wtog: wtog.cards
 };
