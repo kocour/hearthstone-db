@@ -1,11 +1,12 @@
-var allCards = require('./cards/all-cards.json');
-var allCollectibles = require('./cards/all-collectibles.json');
-var brm = require('./cards/brm.json');
-var gvg = require('./cards/gvg.json');
-var loe = require('./cards/loe.json');
-var naxxramas = require('./cards/naxxramas.json');
-var tgt = require('./cards/tgt.json');
-var wtog = require('./cards/wtog.json');
+const allCards = require('./cards/all-cards.json');
+const allCollectibles = require('./cards/all-collectibles.json');
+const brm = require('./cards/brm.json');
+const gvg = require('./cards/gvg.json');
+const kar = require('./cards/kar.json');
+const loe = require('./cards/loe.json');
+const naxxramas = require('./cards/naxxramas.json');
+const tgt = require('./cards/tgt.json');
+const wtog = require('./cards/wtog.json');
 
 module.exports = {
     meta: allCards.meta,
@@ -13,6 +14,7 @@ module.exports = {
     allCollectibles: allCollectibles.cards,
     brm: brm.cards,
     gvg: gvg.cards,
+    kar: kar.cards,
     loe: loe.cards,
     naxxramas: naxxramas.cards,
     tgt: tgt.cards,

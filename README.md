@@ -26,6 +26,7 @@ hearthstone-db:
 	- allCollectibles
 	- brm
 	- gvg
+	- kar
 	- loe
 	- naxxramas
 	- tgt
@@ -77,6 +78,7 @@ set: string
 	- "naxxramas"
 	- "gvg"
 	- "brm"
+	- "kar"
 	- "loe"
 	- "tgt"
 	- "wtog",
