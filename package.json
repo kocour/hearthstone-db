@@ -1,6 +1,6 @@
 {
   "name": "hearthstone-db",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A JSON collection of all Hearthstone cards. Hearthstone database.",
   "main": "index.js",
   "scripts": {

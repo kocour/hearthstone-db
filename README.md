@@ -25,6 +25,7 @@ hearthstone-db:
 	- allCards
 	- allCollectibles
 	- brm
+	- gadgetzan
 	- gvg
 	- kar
 	- loe
