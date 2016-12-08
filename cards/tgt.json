@@ -733,7 +733,7 @@
             "attack": 3,
             "health": 2,
             "name": "Tuskarr Totemic",
-            "description": "Battlecry: Summon ANY random Totem.",
+            "description": "Battlecry: Summon a random basic Totem.",
             "image_url": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/AT_046.png",
             "hero": "shaman",
             "race": "none",

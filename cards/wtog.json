@@ -145,7 +145,7 @@
             "description": "Can only attack if your hero attacked this turn.",
             "image_url": "http://wow.zamimg.com/images/hearthstone/cards/enus/medium/OG_034.png",
             "hero": "neutral",
-            "race": "none",
+            "race": "beast",
             "effect_list": []
         },
         {
@@ -1144,7 +1144,7 @@
             "collectible": true,
             "quality": "epic",
             "category": "spell",
-            "mana": 8,
+            "mana": 9,
             "attack": null,
             "health": null,
             "name": "Call of the Wild",
