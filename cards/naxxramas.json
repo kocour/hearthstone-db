@@ -1,14 +1,7 @@
 {
     "meta": {
-        "patch": "2.5.0.8416",
-        "last_updated": "25.04.2015",
         "repository": "https://github.com/pdyck/hearthstone-db.git",
-        "updated_by": {
-            "name": "Philipp Dyck",
-            "email": "dev.pdyck@gmail.com",
-            "twitter": "@philippdyck",
-            "github": "pdyck"
-        }
+        "contact": "dev.pdyck@gmail.com"
     },
     "cards": [{
         "id": 2001,
